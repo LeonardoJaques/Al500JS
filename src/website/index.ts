@@ -1,15 +1,12 @@
-// import { loop } from "../algoritmos/algorimo19";
-// loop()
-
-// function running() {
-// return document.getElementById('idButton').innerHTML = "<p> teste  </p>";
-// }
-
 const root = document.createElement("div")
-root.innerHTML = `<p>Hello Webpack.</p>`
+root.innerHTML = "<p>"+algoritmo19()+"</p>"
 document.body.appendChild(root)
 
 
-
-
-
+function algoritmo19() {
+       let text = "";
+        for (let i = 19; i <= 40; i++) {
+            text += "<br> - [ ] Exercício " + i + ", Realizado!!!\n</br>";
+        }
+    return text
+}

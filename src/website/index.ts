@@ -1,10 +1,13 @@
+
+
 const root = document.createElement("div")
 root.innerHTML = "<p>"+doLesson()+"</p>"
 document.body.appendChild(root)
 
 
 function doLesson(){
-    return algoritmo19();
+    return algoritmo20();
+    //algoritmo19();
     //algoritmo18();
     //algoritmo17();
     //algoritmo16();
@@ -82,7 +85,6 @@ function algoritmo19() {
     let realint = Math.round(valor1ln3);
     let srealint = valor1ln3;
 
-
     let format = [];
 
     let valor1ln5 = format[1] = Math.sin(45 * Math.PI / 180) + 0.000013;
@@ -95,16 +97,13 @@ function algoritmo19() {
     let valor6ln10 = Math.abs(-8);
     let valor7ln11 = Math.abs(8);
 
-
-    let valor8ln12  = Math.round(5.5);
+    let valor8ln12 = Math.round(5.5);
     let valor9ln13  = Math.round(6.5);
     let valor10ln14 = Math.round(6.5+0.0001);
     let valor11ln15 = Math.round(5.45);
     let valor12ln16 = Math.round(5.51);
     let valor13ln17 = parseInt('87');
     let valor14ln18 = Math.round(3/4);
-
-
 
     let print1 = text1;
     let print2 = "<br><br>Raiz: " + sqr;
@@ -134,4 +133,40 @@ function algoritmo19() {
         print16 + print17 + print18
 
     return tela
+}
+function algoritmo20() {
+
+
+
+    // let d: String | null;
+    // let d1: String| null;
+    let println0 = (() => {
+        let phrase1 = "\ndigite palavra 1: ";
+        let c = prompt(phrase1);
+        return c
+    })();
+
+    let println1 = (() => {
+        let phrase2 = "\ndigite palavra 2: ";
+        let c1 = prompt(phrase2);
+        return c1
+    })();
+
+    let println2 = (() => {
+        if (println0 === null) {
+            let tamChar = "erro";
+            return tamChar;
+        } else {
+            let tamChar = println0.length
+            return tamChar;
+        }
+    })();
+
+    let tela = "<br>" + println0 + "<br>" + "<br>" + println1 + "<br>" +
+        "<br>" + println0 + println1 + "<br>"+
+        "<br>" + println2 + "<br>";
+
+        return tela
+
+
 }

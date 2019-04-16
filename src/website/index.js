@@ -3,7 +3,8 @@ var root = document.createElement("div");
 root.innerHTML = "<p>" + doLesson() + "</p>";
 document.body.appendChild(root);
 function doLesson() {
-    return algoritmo19();
+    return algoritmo20();
+    //algoritmo19();
     //algoritmo18();
     //algoritmo17();
     //algoritmo16();
@@ -109,5 +110,33 @@ function algoritmo19() {
         print10 + print11 + print12 +
         print13 + print14 + print15 +
         print16 + print17 + print18;
+    return tela;
+}
+function algoritmo20() {
+    // let d: String | null;
+    // let d1: String| null;
+    var println0 = (function () {
+        var phrase1 = "\ndigite palavra 1: ";
+        var c = prompt(phrase1);
+        return c;
+    })();
+    var println1 = (function () {
+        var phrase2 = "\ndigite palavra 2: ";
+        var c1 = prompt(phrase2);
+        return c1;
+    })();
+    var println2 = (function () {
+        if (println0 === null) {
+            var tamChar = "erro";
+            return tamChar;
+        }
+        else {
+            var tamChar = println0.length;
+            return tamChar;
+        }
+    })();
+    var tela = "<br>" + println0 + "<br>" + "<br>" + println1 + "<br>" +
+        "<br>" + println0 + println1 + "<br>" +
+        "<br>" + println2 + "<br>";
     return tela;
 }

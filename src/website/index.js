@@ -113,8 +113,6 @@ function algoritmo19() {
     return tela;
 }
 function algoritmo20() {
-    // let d: String | null;
-    // let d1: String| null;
     var println0 = (function () {
         var phrase1 = "\ndigite palavra 1: ";
         var c = prompt(phrase1);
@@ -135,8 +133,38 @@ function algoritmo20() {
             return tamChar;
         }
     })();
-    var tela = "<br>" + println0 + "<br>" + "<br>" + println1 + "<br>" +
-        "<br>" + println0 + println1 + "<br>" +
-        "<br>" + println2 + "<br>";
+    var println3 = (function () {
+        if (println0 === null) {
+            var copyChar = "erro";
+            return copyChar;
+        }
+        else {
+            var copyChar = println0.slice();
+            return copyChar;
+        }
+    })();
+    var d1 = println0;
+    var println4 = d1;
+    var tomador = println0;
+    var println5 = tomador.concat(println1);
+    var println6 = println5.substring(0, 1);
+    var println7 = println5.substring(println5.length - 1, println5.length);
+    var println8 = println5.slice(1);
+    var println9 = println5.substring(2, 3);
+    var println10 = println5.substring(0, println5.length - 8);
+    var println11 = println5.substring(8, println5.length);
+    var tela = "<br>" + "\nPalavra 1 digitada: " + println0 + "<br>" +
+        "<br>" + "\nPalavra 2 digitada: " + println1 + "<br>" +
+        "<br>" + "\nTamanho da 1ª palavra: " + println2 + "<br>" +
+        "<br>" + "\nConcatenando sem armazenar: " + println0 + println1 + "<br>" +
+        "<br>" + "\no conteudo de d(variavel que teve valor copiado de c: " + println3 + "<br>" +
+        "<br>" + "\no conteudo de d1(variavel que teve valor copiado de c: " + println4 + "<br>" +
+        "<br>" + "\nConcatenando com armazenamento: " + println5 + "<br>" +
+        "<br>" + "\nPrimeiro caractere: " + println6 + "<br>" +
+        "<br>" + "\nUltimo caractere: " + println7 + "<br>" +
+        "<br>" + "\nTodos menos o primeiro: " + println8 + "<br>" +
+        "<br>" + "\nO terceiro elemento: " + println9 + "<br>" +
+        "<br>" + "\nOs tres primeiros elementos: " + println10 + "<br>" +
+        "<br>" + "\nOs tres ultimos elementos:  " + println11 + "<br>";
     return tela;
 }

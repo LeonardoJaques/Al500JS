@@ -1,5 +1,7 @@
 
 
+
+
 const root = document.createElement("div")
 root.innerHTML = "<p>"+doLesson()+"</p>"
 document.body.appendChild(root)
@@ -136,37 +138,67 @@ function algoritmo19() {
 }
 function algoritmo20() {
 
+        let println0 = (() => {
+            let phrase1 = "\ndigite palavra 1: ";
+            let c = prompt(phrase1);
+            return c
+        })();
 
+        let println1 = (() => {
+            let phrase2 = "\ndigite palavra 2: ";
+            let c1 = prompt(phrase2);
+            return c1
+        })();
 
-    // let d: String | null;
-    // let d1: String| null;
-    let println0 = (() => {
-        let phrase1 = "\ndigite palavra 1: ";
-        let c = prompt(phrase1);
-        return c
-    })();
+        let println2 = (() => {
+            if (println0 === null) {
+                let tamChar = "erro";
+                return tamChar;
+            } else {
+                let tamChar = println0.length
+                return tamChar;
+            }
+        })();
 
-    let println1 = (() => {
-        let phrase2 = "\ndigite palavra 2: ";
-        let c1 = prompt(phrase2);
-        return c1
-    })();
-
-    let println2 = (() => {
+    let println3 = (() => {
         if (println0 === null) {
-            let tamChar = "erro";
-            return tamChar;
+            let copyChar = "erro";
+            return copyChar;
         } else {
-            let tamChar = println0.length
-            return tamChar;
+            let copyChar = println0.slice()
+            return copyChar;
         }
     })();
 
-    let tela = "<br>" + println0 + "<br>" + "<br>" + println1 + "<br>" +
-        "<br>" + println0 + println1 + "<br>"+
-        "<br>" + println2 + "<br>";
+    let d1 = println0;
+    let println4 = d1;
+
+    let tomador = <string> println0;
+    let println5 = tomador.concat(<string> println1);
+
+    let println6 = println5.substring(0,1);
+    let println7 = println5.substring(println5.length - 1, println5.length);
+    let println8 = println5.slice(1);
+    let println9 = println5.substring(2, 3);
+    let println10 = println5.substring(0,println5.length-8);
+    let println11 = println5.substring(8,println5.length);
+
+
+
+
+    let tela = "<br>" + "\nPalavra 1 digitada: " + println0 + "<br>" +
+        "<br>" + "\nPalavra 2 digitada: " + println1 + "<br>" +
+        "<br>" + "\nTamanho da 1ª palavra: " + println2 + "<br>" +
+        "<br>" + "\nConcatenando sem armazenar: " + println0 + println1 + "<br>" +
+        "<br>" + "\no conteudo de d(variavel que teve valor copiado de c: " + println3 + "<br>" +
+        "<br>" + "\no conteudo de d1(variavel que teve valor copiado de c: " + println4 + "<br>" +
+        "<br>" + "\nConcatenando com armazenamento: " + println5 + "<br>" +
+        "<br>" + "\nPrimeiro caractere: " + println6 + "<br>" +
+        "<br>" + "\nUltimo caractere: " + println7 + "<br>" +
+        "<br>" + "\nTodos menos o primeiro: " + println8 + "<br>" +
+        "<br>" + "\nO terceiro elemento: " + println9 + "<br>" +
+        "<br>" + "\nOs tres primeiros elementos: " + println10 + "<br>" +
+        "<br>" + "\nOs tres ultimos elementos:  " + println11 + "<br>";
 
         return tela
-
-
 }

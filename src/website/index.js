@@ -3,8 +3,9 @@ var root = document.createElement("div");
 root.innerHTML = "<p>" + doLesson() + "</p>";
 document.body.appendChild(root);
 function doLesson() {
-    return algoritmo20();
-    //algoritmo19();
+    return algoritmo21();
+    // algoritmo20();
+    // algoritmo19();
     //algoritmo18();
     //algoritmo17();
     //algoritmo16();
@@ -166,5 +167,27 @@ function algoritmo20() {
         "<br>" + "\nO terceiro elemento: " + println9 + "<br>" +
         "<br>" + "\nOs tres primeiros elementos: " + println10 + "<br>" +
         "<br>" + "\nOs tres ultimos elementos:  " + println11 + "<br>";
+    return tela;
+}
+function algoritmo21() {
+    var calc1 = 12 + 5 / 2;
+    var calc2 = (12 + 5) / 2;
+    var calc3 = Math.pow(64, 1) / 4;
+    var calc4 = Math.pow(64, (1 / 4));
+    var calc5 = 3 * (7 % 5);
+    var calc6 = (3 * 7) % 5;
+    var calc7 = 3 * 7 / 5;
+    var print1 = "<br>" + "\nTestando Hierarquias\n" + "<br>";
+    var print2 = "<br>" + "\n12 + 5 /2 é igual a: " + calc1 + "<br>";
+    var print3 = "<br>" + "\nÉ Diferente de ( 12 + 5 ) /2 que é igual a: " + calc2 + "<br>" + "\nlogo / tem hierarquia maior que + ou -  " + "<br>";
+    var print4 = "<br>" + "\n 64**14 é igual a: " + calc3 + "<br>";
+    var print5 = "<br>" + "\n É DIFERENTE de 64**(1/4) que é igual a: " + calc4 + "<br>" + " logo ** tem HIERARQUIA MAIOR do que * ou /" + "<br>";
+    var print6 = "<br>" + "\n 3 * (7 % 5) é igual a: " + calc5 + "<br>";
+    var print7 = "<br>" + "\n É DIFERENTE de ( 3 * 7 ) % 5 que é igual a: " + calc6 + "<br>" + " logo * tem HIERARQUIA MAIOR do que %" + "<br>";
+    var print8 = "<br>" + "\n É DIFERENTE de  3 * 7  / 5 que é igual a: " + calc7 + "<br>" + " logo / tem HIERARQUIA MAIOR do que *" + "<br>";
+    var tela = print1 + print2
+        + print3 + print4
+        + print5 + print6
+        + print7 + print8;
     return tela;
 }

@@ -8,20 +8,21 @@ document.body.appendChild(root)
 
 
 function doLesson(){
-    return algoritmo21();
+    return algoritimo22();
+    // algoritmo21();
     // algoritmo20();
     // algoritmo19();
-    //algoritmo18();
-    //algoritmo17();
-    //algoritmo16();
-    //algoritmo15();
-    //algoritmo14();
-    //algoritmo13();
-    //algoritmo12();
-    //algoritmo11();
-    //algoritmo00();
+    // algoritmo18();
+    // algoritmo17();
+    // algoritmo16();
+    // algoritmo15();
+    // algoritmo14();
+    // algoritmo13();
+    // algoritmo12();
+    // algoritmo11();
+    // algoritmo00();
 }
-
+/*
 function algoritmo00() {
        let text = "";
         for (let i = 19; i <= 40; i++) {
@@ -227,4 +228,40 @@ function algoritmo21() {
 
     return tela;
 
+}
+*/
+function algoritimo22() {
+    let logica01: number = Math.round(18 / 6 % 2);
+    let logica02: number = Math.round(20 / 2 / 2);
+    let logica03: number = Math.round((20 / 4) / 2);
+    let logica04: number = Math.round(30 / 4 / 2);
+    let logica05: number = Math.round((30 / 4) / 2);
+    let logica06: number = Math.round(7. / 4);
+    let logica07: number = Math.round(7 / 4);
+    let logica08: number = Math.ceil(6. / 4);
+    let logica09: number = Math.round(6 / 4);
+
+
+    let print01 = "<br>" + "\nTestando a Hierarquia" + "<br><br>";
+    let print02 = "<br>" + "\n18 / 6 % 2 é igual a: " + logica01 + "<br>";
+    let print03 = "<br>" + "\nUma operação de divisão fora de parênteses não pode ser um dos operandos de uma expressão com %." + "<br>";
+    let print04 = "<br>" + "\n\n 20 / 2 div 2 é igual a: " + logica02 + "<br>";
+    let print05 = "<br>" + "\nÉ igual a ( 20 / 4 ) div 2: " + logica03 + " \nLogo div tem a MESMA HERAQUIA da /" + "<br>";
+    let print06 = "<br>" + "\n\n30/4 div 2 é igual a: "+ logica04 + "<br>";
+    let print07 = "<br>" + "\nÉ igual a ( 30 / 4 ) div 2: " + logica05 + " \nLogo div tem a MESMA HERAQUIA da /" + "<br>";
+    let print08 = "<br>" + "\n7. div 4: " + logica06 + "<br>";
+    let print09 = "<br>" + "\n7  div 4: " + logica07 + "<br>";
+    let print10 = "<br>" + "\n6. div 4: " + logica08 + "<br>";
+    let print11 = "<br>" + "\n6  div 4: " + logica09 + "<br>";
+    let print12 = "<br>" + "\n" + "<br>";
+
+    let tela = print01 + print02 +
+               print03 + print04 +
+               print05 + print06 +
+               print07 + print08 +
+               print09 + print10 +
+               print11 + print12 ;
+
+
+    return tela
 }

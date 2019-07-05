@@ -3,7 +3,8 @@ var root = document.createElement("div");
 root.innerHTML = "<p>" + doLesson() + "</p>";
 document.body.appendChild(root);
 function doLesson() {
-    return algoritimo22();
+    return algoritimo23();
+    // algoritimo22();
     // algoritmo21();
     // algoritmo20();
     // algoritmo19();
@@ -224,34 +225,51 @@ function algoritmo21() {
     return tela;
 
 }
-*/
+
 function algoritimo22() {
-    var logica01 = Math.round(18 / 6 % 2);
-    var logica02 = Math.round(20 / 2 / 2);
-    var logica03 = Math.round((20 / 4) / 2);
-    var logica04 = Math.round(30 / 4 / 2);
-    var logica05 = Math.round((30 / 4) / 2);
-    var logica06 = Math.round(7. / 4);
-    var logica07 = Math.round(7 / 4);
-    var logica08 = Math.ceil(6. / 4);
-    var logica09 = Math.round(6 / 4);
-    var print01 = "<br>" + "\nTestando a Hierarquia" + "<br><br>";
-    var print02 = "<br>" + "\n18 / 6 % 2 é igual a: " + logica01 + "<br>";
-    var print03 = "<br>" + "\nUma operação de divisão fora de parênteses não pode ser um dos operandos de uma expressão com %." + "<br>";
-    var print04 = "<br>" + "\n\n 20 / 2 div 2 é igual a: " + logica02 + "<br>";
-    var print05 = "<br>" + "\nÉ igual a ( 20 / 4 ) div 2: " + logica03 + " \nLogo div tem a MESMA HERAQUIA da /" + "<br>";
-    var print06 = "<br>" + "\n\n30/4 div 2 é igual a: " + logica04 + "<br>";
-    var print07 = "<br>" + "\nÉ igual a ( 30 / 4 ) div 2: " + logica05 + " \nLogo div tem a MESMA HERAQUIA da /" + "<br>";
-    var print08 = "<br>" + "\n7. div 4: " + logica06 + "<br>";
-    var print09 = "<br>" + "\n7  div 4: " + logica07 + "<br>";
-    var print10 = "<br>" + "\n6. div 4: " + logica08 + "<br>";
-    var print11 = "<br>" + "\n6  div 4: " + logica09 + "<br>";
-    var print12 = "<br>" + "\n" + "<br>";
-    var tela = print01 + print02 +
-        print03 + print04 +
-        print05 + print06 +
-        print07 + print08 +
-        print09 + print10 +
-        print11 + print12;
+    let logica01: number = Math.round(18 / 6 % 2);
+    let logica02: number = Math.round(20 / 2 / 2);
+    let logica03: number = Math.round((20 / 4) / 2);
+    let logica04: number = Math.round(30 / 4 / 2);
+    let logica05: number = Math.round((30 / 4) / 2);
+    let logica06: number = Math.round(7. / 4);
+    let logica07: number = Math.round(7 / 4);
+    let logica08: number = Math.ceil(6. / 4);
+    let logica09: number = Math.round(6 / 4);
+
+
+    let print01 = "<br>" + "\nTestando a Hierarquia" + "<br><br>";
+    let print02 = "<br>" + "\n18 / 6 % 2 é igual a: " + logica01 + "<br>";
+    let print03 = "<br>" + "\nUma operação de divisão fora de parênteses não pode ser um dos operandos de uma expressão com %." + "<br>";
+    let print04 = "<br>" + "\n\n 20 / 2 div 2 é igual a: " + logica02 + "<br>";
+    let print05 = "<br>" + "\nÉ igual a ( 20 / 4 ) div 2: " + logica03 + " \nLogo div tem a MESMA HERAQUIA da /" + "<br>";
+    let print06 = "<br>" + "\n\n30/4 div 2 é igual a: "+ logica04 + "<br>";
+    let print07 = "<br>" + "\nÉ igual a ( 30 / 4 ) div 2: " + logica05 + " \nLogo div tem a MESMA HERAQUIA da /" + "<br>";
+    let print08 = "<br>" + "\n7. div 4: " + logica06 + "<br>";
+    let print09 = "<br>" + "\n7  div 4: " + logica07 + "<br>";
+    let print10 = "<br>" + "\n6. div 4: " + logica08 + "<br>";
+    let print11 = "<br>" + "\n6  div 4: " + logica09 + "<br>";
+    let print12 = "<br>" + "\n" + "<br>";
+
+    let tela = print01 + print02 +
+               print03 + print04 +
+               print05 + print06 +
+               print07 + print08 +
+               print09 + print10 +
+               print11 + print12 ;
+
+
+
+               return tela
+
+}*/
+function algoritimo23() {
+    var a = 135;
+    var b = a % 100 / 10;
+    var logica01 = Math.floor(b);
+    var print01 = "<br>" + "\nDigite número de tres casas: " + "<br>";
+    var print02 = "<br>" + "\nAlgarismo da casa das dezenas: " + a + "<br>";
+    var print03 = "<br>" + "\nAlgarismo da casa das dezenas: " + logica01 + "<br>";
+    var tela = print01 + print02 + print03;
     return tela;
 }

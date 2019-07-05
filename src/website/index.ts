@@ -8,7 +8,8 @@ document.body.appendChild(root)
 
 
 function doLesson(){
-    return algoritimo22();
+    return algoritimo23();
+    // algoritimo22();
     // algoritmo21();
     // algoritmo20();
     // algoritmo19();
@@ -22,6 +23,7 @@ function doLesson(){
     // algoritmo11();
     // algoritmo00();
 }
+
 /*
 function algoritmo00() {
        let text = "";
@@ -229,7 +231,7 @@ function algoritmo21() {
     return tela;
 
 }
-*/
+
 function algoritimo22() {
     let logica01: number = Math.round(18 / 6 % 2);
     let logica02: number = Math.round(20 / 2 / 2);
@@ -263,5 +265,22 @@ function algoritimo22() {
                print11 + print12 ;
 
 
-    return tela
+
+               return tela
+
+}*/
+
+function algoritimo23() {
+
+    let a = 135;
+    let b = a % 100 / 10;
+    let logica01:Number = Math.floor(b);
+
+    let print01 = "<br>" + "\nDigite número de tres casas: " + "<br>";
+    let print02 = "<br>" + "\nAlgarismo da casa das dezenas: "+ a + "<br>";
+    let print03 = "<br>" + "\nAlgarismo da casa das dezenas: "+ logica01 + "<br>";
+
+    let tela = print01 + print02 + print03;
+
+    return tela;
 }
